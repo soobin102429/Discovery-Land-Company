@@ -2,6 +2,8 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 /* font-family: 'Cinzel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Roboto Slab', serif; */
 /* =======================font end======================= */
 
 
@@ -31,4 +33,49 @@
     background-color: #fff;
     height: 3000px;
 }
+.nav-link{
+    margin-left: 30px;
+}
+.text-white{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
 
+.navbar-brand{
+    padding-left: 2%;
+}
+
+.logo{
+    width: 180px;
+    fill: white;
+}
+.navbar-nav{
+    padding: 3%;
+}
+
+a{
+    text-underline-offset: 2px;
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
